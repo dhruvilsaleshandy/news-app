@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <script src="https://rawgit.com/moment/moment/2.2.1/min/moment.min.js"></script>
+    <title>Document</title>
+  </head>
+  <body onload="fetchNewsData()">
+    <nav class="nav">
+      <div>
+        <h1 class="title">
+          <a href="/">LOGO</a>
+        </h1>
+      </div>
+
+      <div class="search">
+        <input
+          type="text"
+          name="search"
+          placeholder="Search..."
+          class="search-input"
+        />
+      </div>
+
+      <div class="categories">
+        <ul class="categories-list">
+          <li class="list">
+            <a href="?category=business">Business</a>
+          </li>
+          <li class="list">
+            <a href="?category=political">Political</a>
+          </li>
+          <li class="list">
+            <a href="?category=technology">Technology</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="menu-icon">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          x="0px"
+          y="0px"
+          width="24"
+          height="24"
+          viewBox="0 0 172 172"
+          style="fill: #000000"
+        >
+          <g
+            fill="none"
+            fill-rule="nonzero"
+            stroke="none"
+            stroke-width="1"
+            stroke-linecap="butt"
+            stroke-linejoin="miter"
+            stroke-miterlimit="10"
+            stroke-dasharray=""
+            stroke-dashoffset="0"
+            font-family="none"
+            font-weight="none"
+            font-size="none"
+            text-anchor="none"
+            style="mix-blend-mode: normal"
+          >
+            <path d="M0,172v-172h172v172z" fill="none"></path>
+            <g fill="#ffffff">
+              <path
+                d="M14.33333,35.83333v14.33333h143.33333v-14.33333zM14.33333,78.83333v14.33333h143.33333v-14.33333zM14.33333,121.83333v14.33333h143.33333v-14.33333z"
+              ></path>
+            </g>
+          </g>
+        </svg>
+      </div>
+    </nav>
+
+    <main class="container">
+      <div class="news-list"></div>
+    </main>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
